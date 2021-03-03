@@ -44,26 +44,11 @@ nav a {
 }
 
 nav>ul>li>a {
+    margin-top: 20px;
     padding: 20px 30px;
     color: #fff;
 }
 
-nav li:hover .submenu {
-    display: inline-block;
-    position: relative;
-    top: 100%;
-    left: 0px;
-    padding: 0px;
-    z-index: 1000;
-}
-
-.submenu {
-    border-bottom: 2px solid rgb(20, 20, 20);
-}
-
-.submenu li a {
-    padding: 15px 30px;
-    font-size: 13px;
-    color: #00b950;
-    width: 270px;
+.logo {
+    margin: 20px;
 }
