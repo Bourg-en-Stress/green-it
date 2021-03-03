@@ -1,4 +1,13 @@
-.display-1 {
-    font-family: garamond;
-    color: yellowgreen;
+.title {
+    color: #00b950;
+    margin: 100px;
+}
+
+.container {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+h1 {
+    color: #00b950;
 }
