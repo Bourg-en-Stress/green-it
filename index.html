@@ -3,26 +3,104 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Le numérique responsable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="logo"><img src="assets/images/logo.jpg" width="30%" height="100%"></li>
-            <li class="menu-accueil"><a href="index.html">ACCUEIL</a></li>
-            <li class="menu-html"><a href="pages/chiffres.html">CHIFFRES CLES</a></li>
-            <li class="menu-css"><a href="pages/energivore.html">APPAREILS UTILISES</a></li>
-            <li class="menu-javascript"><a href="pages/consequences.html">CONSEQUENCES</a></li>
-            <li class="contact"><a href="pages/contres.html">CONTRES-MESURES</a></li>
-        </ul>
-    </nav>
+<main class="container">
 
-    <div class="container">
-        <img src="assets/images/greenearth.jpg" width="100%" height="90%">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" width="60%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/chiffres.html">CHIFFRES CLES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/energivore.html">APPAREILS UTILISES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/consequences.html">CONSEQUENCES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contres.html">CONTRES-MESURES</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row mt-5">
+
+        <div class="col-sm-12 col-md-6">
+
+            <img src="assets/images/greenearth.jpg" width="100%" height="90%">
+
+        </div>
+
+        
+        <div class="col-sm-12 col-md-6">
+
+                <p>
+                    Nous sommes une équipe de stagiaires de la formation professionnelle : Sonia, Lucas et Thierry. Dans le cadre de notre formation en développement web, nous avons conçu et programmé ce site web pour sensibiliser le grand public aux problématiques de l'informatique durable et du numérique responsable.
+                </p>
+                <p>
+                    Notre objectif est de promouvoir l'éco-conception web en recenssant et en documentant les bonnes pratiques pour les proposer aux développeurs.
+                </p>
+                <p>L'équipe :</p>
+            
+
+
+        </div>
+
+
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/sonia.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sonia</h5>
+                  <p class="card-text">Développeuse en devenir, pleine de curiosité, un peu blonde mais pas trop.</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/lucas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lucas</h5>
+                  <p class="card-text">Concepteur créatif, artiste de la team, fait du sport et boit du café quand c'est difficile le matin (souvent du lundi au vendredi...).</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/thierry.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Thierry</h5>
+                  <p class="card-text">On ne peut pas faire de blagues sur Thierry : chef de la team, c'est un vieux sage qui frole la perfection. Gourmand et dénué de tout sens de l'orientation quand même. </p>
+                </div>
+              </div>
+
+        </div>
     </div>
+</main>
+    
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
