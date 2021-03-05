@@ -1,16 +1,13 @@
-.text ul {
-    background-color: yellowgreen;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
 }
 
 .container {
     margin: 1rem;
     border: solid 1px;
+    color: #00b950;
 }
 
 nav>ul {
@@ -33,10 +30,6 @@ nav>ul {
     position: relative;
 }
 
-.submenu {
-    display: none;
-}
-
 nav {
     width: 100%;
     background-color: #00b950;
@@ -55,4 +48,29 @@ nav>ul>li>a {
 
 .logo {
     margin: 20px;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00b950;
+}
+
+.text {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 5vh;
+    word-spacing: 1vh;
+    ;
+}
+
+.nombres{
+    padding-top: 50px;
+}
+
+.contain {
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
