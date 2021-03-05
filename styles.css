@@ -7,7 +7,7 @@ body {
 .container {
     margin: 1rem;
     border: solid 1px;
-    color: #00b950;
+    color: #707e76;
 }
 
 nav>ul {
@@ -71,6 +71,11 @@ nav>ul>li>a {
 }
 
 .contain {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 4rem;
+}
+
+.lignes {
+    margin: 4rem;
+    padding-bottom: 20px;
+    text-align: center;
 }
