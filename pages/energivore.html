@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Un site présentant les métiers du numérique réalisé par les stagiaires Onlineformapro de Bourg en Bresse">
     <title>Le numérique responsable</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/energivore.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/energivore.css">
 </head>
-
-<link rel="stylesheet" href="styles.css" />
 
 <body>
     <nav>
         <ul>
-            <li class="logo"><img src="assets/images/logo.jpg" width="30%" height="100%"></li>
-            <li class="menu-accueil"><a href="index.html">ACCUEIL</a></li>
+            <li class="logo"><img src="../assets/images/logo.jpg" width="30%" height="100%"></li>
+            <li class="menu-accueil"><a href="../index.html">ACCUEIL</a></li>
             <li class="menu-html"><a href="chiffres.html">CHIFFRES CLES</a></li>
             <li class="menu-css"><a href="energivore.html">APPAREILS UTILISES</a></li>
             <li class="menu-javascript"><a href="consequences.html">CONSEQUENCES</a></li>
@@ -26,45 +24,69 @@
         </ul>
     </nav>
 
-</body>
+    <main class="container">
 
-</html>
-
-<body>
     <div class="title">
-        <h1>LES ACTIVITES ENERGIVORE</h1>
+        <h1>LES ACTIVITÉS ENERGIVORES</h1>
     </div>
-    <main class="contain">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
+
+        <div class="row d-flex"> 
+
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                
                 <div class="card" style="width: 18rem;">
                     <img src="../assets/images/greenearth.jpg" class="card-img-top" alt="data center">
 
                     <div class="card-body">
                         <h5 class="card-title">Chiffres</h5><br>
-                        <p class="card-text"><strong>Le streaming vidéo</strong> correspond à 60% des flux de données sur Internet.<br> La consommation mondiale de streaming vidéo émet 300 millions de tonnes de CO₂.<br> 10 % de l’électricité produite sont consommées uniquement
-                            par des Data centers.
-                            <br> La pollution des objets connectés constituent : 76% à l’épuisement des ressources naturelles non renouvelables du monde.
-                            <strong class="couleur">
-                </strong> </p><br><br>
-                        <a href="../index.html" class="btn btn-outline-success">Accueil</a>
+                        <p class="card-text">
+                            <ul>
+                                <li class="mb-3"><strong>Le streaming vidéo</strong> correspond à 60% des flux de données sur Internet.</li>
+                                <li class="mb-3">
+                                    La consommation mondiale de streaming vidéo émet 300 millions de tonnes de CO₂.
+                                </li>
+                                <li class="mb-3">10 % de l’électricité produite sont consommées uniquement
+                                    par des Data centers.</li>
+                                    <li class="mb-3">
+                                        La pollution des objets connectés constituent : 76% à l’épuisement des ressources naturelles non renouvelables du monde.
+                                    </li>
+                            </ul>
+</p>
                     </div>
                 </div>
 
 
             </div>
-            <div class="col-md-4 col-sm-12">
-                <ul>
-                    <li>Le streaming vidéo correspond à 60% des flux de données sur Internet.</li><br>
-                    <li>La consommation mondiale de streaming vidéo émet 300 millions de tonnes de CO₂.</li><br>
-                    <li>10 % de l’électricité produite sont consommées uniquement par des Data centers.</li><br>
-                    <li> La pollution des objets connectés costituent : 76% à l’épuisement des ressources naturelles non renouvelables du monde
-                    </li><br>
-                </ul>
+            <div class="col-md-6 col-sm-12">
+                <canvas id="myChart" width="400" height="400"></canvas>
             </div>
 
     </main>
-
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['streaming vidéo', 'autres flux de données sur Internet'],
+                datasets: [{
+                    data: [60, 40],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(156, 136, 255,1.0)'
+                    ],
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
